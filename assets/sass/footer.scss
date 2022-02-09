@@ -1,0 +1,208 @@
+.footer{
+    background-color: #121212;
+}
+
+.footer__intro{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 95px;
+}
+
+.footer__maininfo{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__maininfo_tri{
+    display: flex;
+}
+
+.footer__maininfo_singular{
+    h4{
+        color: white;
+        margin-top: 0;
+    }
+    
+    a, p{
+        color: white;
+        font-size: 21px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+}
+
+
+.footer__maininfo_singular a:hover,
+.footer__maininfo_singular p:hover{
+    text-decoration: underline;
+}
+
+.footer__mainbuttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__mainbuttons .btn--longsmall{
+    margin-bottom: 11px;
+    justify-content: center;
+}
+
+.footer__mainbuttons p{
+    cursor: pointer;
+}
+
+.orange_bar{
+    margin-top: 50px;
+    height: 3px;
+    width: 100%;
+    background-color: #FFAE00;
+}
+
+.footer__subinfo_information{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 30px 0;
+}
+
+.footer__subinfo_information a{
+    color: white;
+    font-size: 15px;
+}
+
+.footer__subinfo_information a:hover{
+    color: #E09900;
+}
+
+.footer__maininfo_singular--second,
+.footer__maininfo_singular--third{
+    margin-left: 60px;
+}
+
+.footer__three_circles{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__circle{
+    width: 42px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.footer_logo{
+    width: 258px;
+    margin-top: -24px;
+
+    @media(max-width: 768px){
+        width: 170px;
+    }
+}
+
+.footer__button:hover{
+    text-decoration: underline;
+    background-image: linear-gradient(#FFAE00 100%, #FF8103 0%);
+}
+
+/* Modal */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 22;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+    background-color: black;
+    color: white;
+    margin: 10% auto;
+    padding: 15px 10px 23px;
+    border: 1px solid #888;
+    width: 650px;
+    border: 0;
+    position: relative;
+
+    .close{
+        img{
+            position: absolute;
+            width: 26px;
+            right: 15px;
+        }
+    }
+}
+
+.modal_form_input_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .wpcf7-form-control-wrap{
+        width: 100%;
+        align-items: center;
+        display: flex;
+    }
+
+    .howfindus .modal_form_input{
+        padding-left: 8px;
+    }
+}
+
+.modal-content h2{
+    font-size: 35px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.modal_form_input{
+    background-color: #292929;
+    color: #757575;
+    font-size: 21px;
+    border: 0;
+    padding: 9px 12px;
+    font-family: Arial;
+    margin: 0 auto 19px auto;
+    width: 90%;
+    height: 54px;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+
+    &--submit{
+        text-align: center;
+        background-image: linear-gradient(to right, #FF8103 0%, #FFAE00  100%);
+        width: 90%;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.footer__corporatelogo{
+    width: 150px;
+    padding-top: 6px;
+}
+
+@media(max-width: 767px){
+    .footer__three_circles{
+        padding-top: 20px;
+    }
+}
+
+.modal-content{
+    p{
+        width: 90%;
+        margin: 0 auto;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    a{
+        color: white;
+        text-decoration: underline;
+    }
+}

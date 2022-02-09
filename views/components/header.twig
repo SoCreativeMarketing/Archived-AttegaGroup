@@ -1,0 +1,25 @@
+<div class="headernav">
+    <div class="headernav__content">
+        <a href="/" class="headernav__logo">
+            <img class="web_info" src="{{ site.theme.link }}/assets/img/LogoWithTagline.svg" alt="attega logo">
+            <img class="mobile_info" src="{{ site.theme.link }}/assets/img/LogoNoTagline.svg" alt="attega logo">
+        </a>
+        <div class="headernav__rightside">
+            <div class="headernav__threebuttons">
+                <a class="headernav__threebuttons--left" href="/applicants">Job Vacancies</a>
+                <p class="headernav__threebuttons--middle" onclick="openModal()">Request a Call</p>
+                <a class="headernav__threebuttons--right" href="tel:02393876445">Call Us</a>
+            </div>
+            <div class="headernav__mainlinks">
+                <a href="/" {% if function('get_page_uri') == 'homepage' %} class="active" {% endif %}>Home</a>
+                <a href="/clients" {% if function('get_page_uri') == 'clients' %} class="active" {% endif %}>Clients</a>
+                <a href="/applicants" {% if function('get_page_uri') == 'applicants' %} class="active" {% endif %}>Applicants</a>
+                <a href="/sectors" {% if function('get_page_uri') == 'sectors' %} class="active" {% endif %}>Sectors</a>
+                <a href="/about-us" {% if function('get_page_uri') == 'about-us' %} class="active" {% endif %}>About</a>
+                <a href="/blogs" {% if function('get_page_uri') == 'blogs' %} class="active" {% endif %}>Blog</a>
+                <a href="/contact" {% if function('get_page_uri') == 'contact' %} class="active" {% endif %}>Contact</a>
+            </div>
+        </div>
+        <img class="header_menu_icon_mobile" onclick="toggleNav()" src="{{ site.theme.link }}/assets/img/BurgerMenu.svg" alt="open mobile menu burger icon">
+    </div>
+</div>

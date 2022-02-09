@@ -1,0 +1,68 @@
+<div class="footer">
+    <div class="footer__content my_container">
+        <div class="footer__intro">
+            <img class="footer_logo" src="{{ site.theme.link }}/assets/img/LogoWithTagline.svg" alt="attega logo">
+            <div class="footer_logos">
+                <div class="footer__three_circles">
+                    <a href="https://www.facebook.com/attegagroup">
+                        <img class="footer__circle" src="{{ site.theme.link }}/assets/img/Facebookicon-01.svg" alt="facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com/attegagroup">
+                        <img class="footer__circle" src="{{ site.theme.link }}/assets/img/InstaIcon-01.svg" alt="instagram icon">
+                    </a>
+                    <a href="https://www.linkedin.com/company/attega-group">
+                        <img class="footer__circle" src="{{ site.theme.link }}/assets/img/LinkedinIcon-01.svg" alt="linkedin icon">
+                    </a>
+                </div>
+                <img class="footer__corporatelogo" src="{{ site.theme.link }}/assets/img/CorporateMember-light.png" alt="linkedin icon">
+            </div>
+        </div>
+        <div class="footer__maininfo">
+            <div class="footer__maininfo_tri">
+                <div class="footer__maininfo_singular footer__maininfo_singular--first">
+                    <h4>Opening Hours</h4>
+                    <p>08:00 - 17:00 Mon-Thu</p>
+                    <p>08:00 - 16:30 Fri</p>
+                    <p>Closed Weekends</p>
+                </div>
+                <div class="footer__maininfo_singular footer__maininfo_singular--second">
+                    <h4>Location</h4>
+                    <p>25 Barnes Wallis Road,</p>
+                    <p>Fareham, Hampshire,</p>
+                    <p>P015 5TT</p>
+                </div>
+                <div class="footer__maininfo_singular footer__maininfo_singular--third">
+                    <h4>Contact Us</h4>
+                    <a href="tel:02393876445"><p>02393 876 445</p></a>
+                    <a href="mailto:info@attegagroup.com"><p>info@attegagroup.com</a>
+                </div>
+            </div>
+            <div class="footer__mainbuttons">
+                <p class="web_info btn--longsmall footer__button" onclick="openModal()">Request a Call Back</p>
+                <a class="web_info btn--longsmall footer__button" href="tel:02393876445">Call us 02393 876 445</a>
+                <a class="web_info btn--longsmall footer__button" href="/applicants">Job Vacancies</a>
+                <p class="mobile_info btn--longsmall btn--mobile" onclick="openModal()">Request a Call Back</p>
+                <a class="mobile_info btn--longsmall btn--mobile" href="tel:02393876445">Call Us</a>
+            </div>
+        </div>
+        <div class="footer__subinfo">
+            <div class="orange_bar"></div>
+            <div class="footer__subinfo_information">
+                <a href="/candidate-gdpr">Candidate GDPR Statement</a>
+                <a href="/terms-conditions">Terms & Conditions</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/cookie-policy">Cookie Policy</a>
+                <a href="/web-cookies">Web & Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()"><img src="{{ site.theme.link }}/assets/img/RequestCallBackCross.svg" alt=""></span>
+        <h2>Request a Call Back</h2>
+        <p>Fill out the form below and the team will be in touch as soon as possible. Alternatively, give the office a call on <a href="tel:02393876445">02393876445</a></p>
+        {{ function('do_shortcode', '[contact-form-7 id="164" title="Pop Up Contact Form"]') }}        
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="blogs_section">
+    <h2>Stay up to date with recruitment news</h2>
+    <div class="blogs_section__squares my_container">
+    {% if blogs|length > 0 %}
+    {% for blog in blogs %}
+        <div class="blogs_squares__left">
+            <a href="{{ function('get_the_permalink', blog.ID) }}">
+                <img src="{{ blog.thumbnail }}" alt="">
+                <button class="blog_grid__item__button__two">{{ blog.post_title }}<img class="blog_arrow_two" src="{{ site.theme.link }}/assets/img/BlogArrowIcon.svg" alt="next arrow"></button>
+            </a>
+        </div>
+    {% endfor %}
+    {% else %}
+        <h2>No Featured Blogs</h2>
+    {% endif %}
+    </div>
+</div>

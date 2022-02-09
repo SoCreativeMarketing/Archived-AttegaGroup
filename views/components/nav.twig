@@ -1,0 +1,20 @@
+<div class="nav">
+    <div class="nav_inner">
+        <div class="nav_inner__top">
+            <a href="{{ function("home_url") }}">
+                <img class="nav_logo_mobile" src="{{ site.theme.link }}/assets/img/LogoNoTagline.svg" alt="Attega Logo">
+            </a>
+            <img class="nav_menu_close_icon" onclick="toggleNav()" src="{{ site.theme.link }}/assets/img/CrossMenu.svg"  alt="Menu Close Button">
+        </div>
+        <div class="nav_inner__content">
+            <a href="{{ function("home_url") }}">Home</a>
+            <a href="{{ function("home_url","clients") }}">Clients</a>
+            <a href="{{ function("home_url","applicants") }}">Applicants</a>
+            <a href="{{ function("home_url","sectors") }}">Sectors</a>
+            <a href="{{ function("home_url","about-us") }}">About</a>
+            <a href="{{ function("home_url","blog") }}">Blog</a>
+            <a href="{{ function("home_url","contact") }}">Contact</a>
+        </div>
+        <a class="nav__telephonebutton" href="tel:02393 876 445">Call us</a>
+    </div>
+</div>

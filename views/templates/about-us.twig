@@ -1,0 +1,115 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero about_us_hero">
+    <h1>ABOUT US</h1>
+</div>
+<div class="phoneright_textleft_area">
+    <div class="phoneright_textleft my_container">
+        <div class="phoneright_textleft__left">
+            <h2>Interested in joining the Attega team?</h2>
+            <p>We are always on the look out for recruiting new individuals for our own team at Attega. If you are a confident, outgoing and hardworking person, 
+            we would love to hear from you, no matter your background or level of experience. Get in touch by emailing us a copy of your CV and why you are 
+            interested in working with us.</p>
+        </div>
+        <div class="phoneright_textleft__right">
+            <div class="tribox__single_phoneright">
+                <a href="mailto:info@attegagroup.com">
+                    <div class="tribox__single__imageleft"></div>
+                    <div class="tribox__single__content">
+                        <img class="tribox__single__icon" src="{{ site.theme.link }}/assets/img/EmailIcon-01.svg" alt="email / mail icon">
+                        <h3>Send CV:</h3>
+                        <p>info@attegagroup.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="picright_textleft my_container">
+    <div class="web_info about_us_info textleft">
+        <h3>Attega Group, your new recruitment partner</h3>
+        <p>Our team of professionals, with industry experience, are committed to helping you through the recruitment process whether that is working with your organisation to find the 
+            perfect candidate or placing you in your ideal role.<br><br>
+            We develop strong long-lasting relationships with companies who have big ideas for development and have various recruitment packages available to reflect this. Our aim 
+            through this process allows us to gain an in-depth understanding of our client’s recruitment needs and ultimately provides the tailored support that our clients need.</p>
+        <a class="btn btn--small btn--web" onclick="openModal()">Speak to the Team</a>
+    </div>
+    <div class="web_info picright">
+        <img src="{{ site.theme.link }}/assets/img/AboutUsImage1.jpg" alt="">
+    </div>
+    <div class="mobile_info textleft">
+        <h3>Attega Group, your new recruitment partner</h3>
+        <img src="{{ site.theme.link }}/assets/img/AboutUsImage1.jpg" alt="">
+    </div>
+    <div class="mobile_info picright">
+        <p>Our team of professionals, with industry experience, are committed to helping you through the recruitment process whether that is working with your organisation to find the 
+            perfect candidate or placing you in your ideal role.<br><br>
+            We develop strong long-lasting relationships with companies who have big ideas for development and have various recruitment packages available to reflect this. Our aim 
+            through this process allows us to gain an in-depth understanding of our client’s recruitment needs and ultimately provides the tailored support that our clients need.</p>
+        <a href="tel:02393876445">
+            <button href="tel:02393876445" class="btn btn--mobile">Speak to the Team</button>
+        </a>
+    </div>
+</div>
+<div class="picleft_textright my_container">
+    <div class="web_info about_us_info picleft">
+        <img src="{{ site.theme.link }}/assets/img/AboutUsImage2.jpg" alt="">
+    </div>
+    <div class="web_info textright">
+        <h3>Why Attega?</h3>
+        <p>Partnering with Attega for your business saves times and money.<br><br>We’ll handle the candidate application and selection process. Choosing Attega as your 
+        recruitment partner means that we handle all data according to GDPR regulations, saving your HR teams and Hiring Managers time. The hiring process can be expensive 
+        but with our partnership, your business won’t need access to candidate search portals or need to advertise vacancies, saving money for all future recruitment.</p>
+        <a class="btn btn--small btn--web" href="https://bit.ly/3nVgpaK">Our Reviews</a>
+    </div>
+    <div class="mobile_info picleft">
+        <p>Partnering with Attega for your business saves times and money.<br><br>We’ll handle the candidate application and selection process. Choosing Attega as your 
+        recruitment partner means that we handle all data according to GDPR regulations, saving your HR teams and Hiring Managers time. The hiring process can be expensive 
+        but with our partnership, your business won’t need access to candidate search portals or need to advertise vacancies, saving money for all future recruitment.</p>
+        <a href="https://bit.ly/3nVgpaK">
+            <button class="btn btn--mobile">Our Reviews</button>
+        </a>
+    </div>
+    <div class="mobile_info textright">
+        <h3 class="text_right__specificone">Why Attega?</h3>
+        <img src="{{ site.theme.link }}/assets/img/AboutUsImage2.jpg" alt="">
+    </div>    
+</div>
+<div class="about_fourboxes_section">
+    <div class="my_container about_fourboxes">
+        <div class="about_fourboxes__left">
+            <div class="about_box__imageleft"></div>
+            <h3>INVEST</h3>
+            <p>We invest time into understanding our clients to enable us to place top talent that aligns with each client’s goals and culture.</p>
+        </div>
+        <div class="about_fourboxes__right">
+            <div class="about_box__imageleft"></div>
+            <h3>EFFICIENT</h3>
+            <p>We pre-screen all candidates through video or verbal interviews before sending through CVs to make your hiring process more efficient.</p>
+        </div>
+    </div>
+    <div class="my_container about_fourboxes">
+        <div class="about_fourboxes__left">
+            <div class="about_box__imageleft"></div>
+            <h3>SAFE</h3>
+            <p>We aim to offer the highest level of service at the fairest price to ensure you are receiving a reliable recruitment service that you feel confident and safe using.</p>
+        </div>
+        <div class="about_fourboxes__right">
+            <div class="about_box__imageleft"></div>
+            <h3>ADAPT</h3>
+            <p>We focus on long-term relationships with clients to adapt your recruitment strategy as your business grows, tailoring each solution to our client’s needs with the aim of saving time and money.</p>
+        </div>
+    </div>
+</div>
+
+{% include 'components/clients-component.twig' %}
+
+{% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero blogs_hero">
+    <h1>BLOG</h1>
+</div>
+<div class="phoneright_textleft_area mobile_info">
+    <div class="phoneright_textleft my_container">
+        <div class="phoneright_textleft__left">
+            <p>Keep up to date with the latest news in the recruitment industry and check out our tips and advice for applicants looking to land their next role.</p>
+        </div>
+        <div class="phoneright_textleft__right">
+            <div class="blog_search">
+                <form method="get" role="search" action="/blogs">
+                    <input type="text" placeholder="Enter Keywords..." name="search">
+                    <input type="submit" value="&nbsp;" class="submit button--green">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blogs_category">
+    <div class="my_container">
+        <div class="blogs_category_row">
+            <div class="blogs_grid">
+                <div class="blogs_row">
+                {% if posts|length > 0 %}
+                {% for post in posts %}
+                    <a class="blogs_grid__item" href="{{ function('get_the_permalink', post.ID) }}">
+                        <div class="blog_grid__item__border">
+                            <img src="{{ post.thumbnail }}" alt="">
+                                <button class="blog_grid__item__button"><img class="blog_arrow" src="{{ site.theme.link }}/assets/img/BlogArrowIcon.svg" alt="next arrow"></button>
+                            <h3>{{ post.post_title }}</h3>
+                        </div>
+                    </a>
+                {% endfor %}
+                {% else %}
+                    <h2>No Results</h2>
+                {% endif %}
+                </div>
+            </div>
+            <div class="blogs_catsidebar">
+                <div class="blog_search web_info">
+                    <form method="get" role="search" action="/blogs">
+                        <input type="text" placeholder="Enter Keywords..." name="search">
+                        <input type="submit" value="&nbsp;" class="submit button--green">
+                    </form>
+                </div>
+                <div class="blog_sideinfo">
+                    <h3>How can we help you?</h3>
+                    <p>Our team are always on hand to assist with any queries you may have and discuss job roles, whether you're a client or an applicant.</p>
+                    <a class="btn btn--small btn--web" href="/contact">Contact Us</a>
+                    <a class="btn btn--small btn--mobile" href="/contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="tool-pagination">
+            <div class="pages">
+                {% for page in posts.pagination.pages %}
+                    <div class="pageslink">
+                        {% if page.link %}
+                            <a href="{{page.link}}" class="{{page.class}}">{{page.title}}</a>
+                        {% else %}
+                            <span class="{{page.class}}">{{page.title}}</span>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

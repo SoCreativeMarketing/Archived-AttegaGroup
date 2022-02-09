@@ -1,0 +1,130 @@
+/* Auto zoom if on laptop or zoomed in on chrome */
+@media(-webkit-device-pixel-ratio: 1.25){
+    html{
+        zoom: 0.8;
+    }
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 29px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 21px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn{
+    color: white;
+    font-size: 28px;
+    border: 0;
+    cursor: pointer;
+    background-image: linear-gradient(#FFAE00  0%, #FF8103 100%);
+
+    &--small{
+        font-size: 21px;
+        padding: 18px 29px;
+    }
+
+    &--longsmall{
+        width: 208px;
+        height: 35px;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(#FFAE00  0%, #FF8103 100%);
+    }
+}
+
+.attega_center{
+    text-align: center;
+}
+
+.my_container{
+    width: 1354px;
+    margin: 0 auto;
+}
+
+.cookie_page{
+    padding: 175px 0 75px;
+
+    h1{
+        color: black;
+        font-size: 29px;
+        text-align: center;
+    }
+}
+
+.medium_hero{
+    box-sizing: border-box;
+    padding-top: 274px;
+    padding-bottom: 171px;
+    background-color: grey;
+
+    h1{
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.phoneright_textleft_area{
+    padding: 86px 0;
+    background-color: rgb(49, 49, 49);
+    color: white;
+
+    .phoneright_textleft__left{
+        padding-right: 40px;
+        width: 70%;
+        box-sizing: border-box;
+    }
+}
+
+.btn:hover{
+    background-image: none;
+    background-color: black;
+}
+
+.fourohfour_page{
+    padding: 200px 0 150px 0;
+    color: black;
+
+    h1{
+        font-size: 30px;
+        color: black;
+    }
+}
+
+.oscp{
+    background-color: #F2F2F2
+}
+
+.my_container.oscp_after{
+    margin-top: -45px;
+}

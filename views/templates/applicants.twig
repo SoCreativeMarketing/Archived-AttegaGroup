@@ -1,0 +1,54 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero applicants_hero">
+    <h1>APPLICANTS</h1>
+</div>
+<div class="phoneright_textleft_area">
+    <div class="phoneright_textleft my_container">
+        <div class="phoneright_textleft__left">
+            <h2>Send us your CV and we will respond within 2 hours</h2>
+            <p>At Attega, we support candidates throughout the recruitment process, giving you helpful tips, advice, and updates on your application status, so 
+            that you’re never left in the dark.</p>
+        </div>
+        <div class="phoneright_textleft__right">
+            <div class="tribox__single_phoneright">
+                <a href="mailto: info@attegagroup.com">
+                    <div class="tribox__single__imageleft"></div>
+                    <div class="tribox__single__content">
+                        <img class="tribox__single__icon" src="{{ site.theme.link }}/assets/img/EmailIcon-01.svg" alt="email / mail icon">
+                        <h3>Send CV:</h3>
+                        <p>info@attegagroup.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'components/oscp-component.twig' %}
+
+<div class="my_container oscp_after">
+    <div class="attega_center">
+        <a class="btn btn--small btn--web" onclick="openModal()">Speak to the Team</a>
+    </div>
+    <a href="tel:02393876445">
+        <button class="btn btn--mobile">Speak to the Team</button>  
+    </a>
+</div>
+
+
+{% include 'components/featured-jobs-component.twig' with { jobs : job_listings } %}
+
+{% include 'components/sectors-component.twig' %}
+
+{% include 'components/clients-component.twig' %}
+
+{% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

@@ -1,0 +1,70 @@
+.about_fourboxes_section{
+    padding: 83px 0 58px 0;
+    margin-top: 87px;
+    background-color: #585858;
+
+    @media(max-width: 1300px){
+        margin-top: 70px;
+    }
+
+    @media(max-width: 767px){
+        margin-top: 0;
+    }
+}
+
+.about_fourboxes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    color: white;
+
+    &__left,
+    &__right{
+        position: relative;
+        text-align: center;
+        width: 49%;
+        background-color: #1E1E1E;
+        padding-left: 35px;
+        padding-right: 14px;
+        box-sizing: border-box;
+    }
+}
+
+.about_fourboxes{
+    p{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 23px;
+    }
+}
+
+.about_box__imageleft{
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 21px;
+    background-image: linear-gradient(#EFAE2C 0%, #FE8700 100%);
+}
+
+@media(max-width: 1500px){
+    .about_us_info.textleft{
+        padding-right: 30px;
+    }
+    
+    .about_us_info.textright{
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 1280px){
+    .web_info.textleft{
+        padding-right: 30px;
+    }
+    
+    .web_info.textright{
+        padding-left: 30px;
+    }
+}
+

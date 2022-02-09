@@ -1,0 +1,944 @@
+/* misc media queries */
+
+@media(min-width: 1501px){
+    .textleft,
+    .textright{
+        line-height: 30px;
+    }
+
+    .textleft p,
+    .textright p{
+        padding-bottom: 28px;
+    }
+
+    .textleft,
+    .textright{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 1500px){
+    h1{
+        font-size: 65px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    p,
+    .footer__maininfo_singular a, 
+    .footer__maininfo_singular p,
+    .footer__subinfo_information a{
+        font-size: 18px;
+    }
+    
+    .home_hero{
+        height: auto !important;
+        padding: 151.4px 0 130px;
+    }
+    
+    .my_container{
+        width: 80%;
+    }
+    
+    .headernav__content{
+        width: 80%;
+    }
+
+    .home_hero p{
+        font-size: 21px;
+    }
+
+    .fiveboxes__box{
+        width: 24%;
+    }
+
+    .fiveboxes__boxes.my_container{
+        width: 100%;
+    }
+
+    .blogs_section__squares img,
+    .picright_textleft img,
+    .picleft_textright img{
+        width: 100%;
+    }
+
+    .textleft,
+    .textright,
+    .picleft,
+    .picright{
+        width: 50%;
+    }
+
+    .headernav__threebuttons a{
+        font-size: 16px;
+    }
+
+    .home_hero .btn--right{
+        padding: 6px 48px;
+    }
+
+    .home_hero .btn--left{
+        padding: 6px 65px;
+    }
+
+    .carousel_3_item h4{
+        font-size: 25px;
+    }
+
+    .contact_formarea{
+        padding: 90px 0;
+    }
+
+    .footer__maininfo_singular--second, 
+    .footer__maininfo_singular--third{
+        margin-left: 20px;
+    }
+
+    .fiveboxes__box_internals__rightside{
+        padding-left: 38px;
+    }
+
+    .picright_textleft{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        margin-bottom: 0;
+    }
+
+    .picleft_textright{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .multibox_carousel_section h2{
+        padding-top: 90px;
+        margin-bottom: 35px;
+    }
+
+    .blogs_section{
+        padding-top: 85px;
+        padding-bottom: 90px;
+    }
+
+    .blogs_section h2{
+        margin-bottom: 45px;
+    }
+
+    .carousel_section{
+        padding-bottom: 70px;
+    }
+
+    .carousel_section h2{
+        padding-top: 85px;
+        margin-bottom: 10px;
+    }
+
+    .carousel_2__section{
+        padding-top: 55px;
+        padding-bottom: 85px;
+    }
+
+    .footer__maininfo{
+        padding-top: 60px;
+    }
+
+    .btn--small{
+        font-size: 19px;
+    }
+
+    .fixeboxes h2{
+        padding-bottom: 20px;
+    }
+
+    .fixeboxes{
+        padding: 60px 110px 90px 110px;
+    }
+
+    .medium_hero{
+        padding-top: 244px;
+        padding-bottom: 141px;
+    }
+
+    .job_blurb{
+        min-height: 162px;
+    }
+}
+
+@media(max-width: 1450px){
+    .job_blurb{
+        min-height: 189px;
+    }
+}
+
+@media(max-width: 1390px){
+    .headernav__rightside{
+        width: 145%;
+    }
+
+    .btn--small{
+        font-size: 21px;
+        padding: 12px 19px;
+    }
+
+    .textleft,
+    .textright{
+        margin-top: 6px;
+    }
+}
+
+@media(max-width: 1190px){
+    .fiveboxes__box h3{
+        font-size: 16px;
+    }
+
+    .fiveboxes__box_internals__rightside{
+        padding-left: 28px;
+    }
+
+    .headernav__mainlinks a{
+        font-size: 18px;
+        color: white;
+        transition: 0.2s;
+        padding: 0 14px;
+    }
+
+    .headernav__threebuttons{
+        width: 97%;
+    }
+
+    .picright img,
+    .picleft img,
+    .picright,
+    .picleft{
+        width: 100%;
+    }
+
+    .picright_textleft{
+        flex-direction: column;
+    }
+
+    .picleft_textright{
+        flex-direction: column-reverse;
+    }
+
+    .picleft img,
+    .picright img{
+        margin-bottom: 28px;
+    }
+
+    .textleft, 
+    .textright, 
+    .picleft, 
+    .picright{
+        width: 100%;
+    }
+
+    .textleft, 
+    .textright{
+        padding: 0 0 70px 0;
+    }
+
+    .textright h3{
+        margin-top: 0;
+    }
+
+    .picright_textleft{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .picleft_textright{
+        padding-bottom: 70px;
+    }
+
+    .carousel_3_item h4{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1071px){
+    .job_blurb {
+        min-height: 189px;
+    }
+} 
+
+@media(min-width: 992px){
+    .header_menu_icon_mobile{
+        display: none;
+    }
+}
+
+@media(max-width: 991px){
+    .headernav__logo{
+        top: 13px;
+        position: absolute;
+    }
+
+    .header_menu_icon_mobile{
+        width: 32px;
+        height: 26px;
+        position: absolute;
+        top: 43px;
+        right: 0;
+        cursor: pointer;
+        margin-right: 7.5%;
+        transform: scale(1);
+    }
+
+    .nav_inner__top{
+        display: flex;
+    }
+
+    .nav_inner{
+        height: 100%;
+    }
+
+    .nav_inner__content{
+        text-align: center;
+        margin-bottom: -90px;
+    }
+
+    .nav{
+        padding: 0;
+    }
+
+    .headernav__rightside{
+        display: none;
+    }
+
+    .clients__phoneright .picright{
+        flex-direction: column;
+
+        a{
+            width: 100%;
+        }
+    }
+
+    .contact_formarea__header p{
+        padding: 5px 0 40px 0;
+    }
+}
+
+@media(min-width: 768px){
+    .btn--mobile,
+    .mobile_info{
+        display: none;
+    }
+
+    @media(max-width: 1188px){
+        .multibox_carousel_section h2{
+            padding-top: 0;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 21px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .my_container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .medium_hero{
+        padding-top: 105px;
+        padding-bottom: 70px;
+    }
+
+    .blogs_section img,
+    .picright img,
+    .picleft img,
+    .picright,
+    .picleft,
+    .blogs_squares__left,
+    .blogs_squares__right,
+    .carousel__textleft,
+    .carousel__picright,
+    .picright button,
+    .picleft button,
+    .headernav__content{
+        width: 100%;
+    }
+
+    .btn--web,
+    .headernav__rightside,
+    .web_info{
+        display: none;
+    }
+
+    .blogs_section__squares,
+    .footer__maininfo,
+    .fiveboxes__boxes,
+    .picright_textleft{
+        flex-direction: column;
+    }
+
+    .picleft_textright,
+    .carousel_section .carousel_item{
+        flex-direction: column-reverse;
+    }
+
+    .headernav__logo{
+        left: 7.5%;
+        top: 13px;
+        position: absolute;
+    }
+
+    .picleft img,
+    .picright img{
+        margin-bottom: 28px;
+    }
+
+    .textleft, 
+    .textright, 
+    .picleft, 
+    .picright{
+        width: 100%;
+    }
+
+    .home_hero{
+        height: auto;
+    }
+
+    .home_hero p{
+        font-size: 18px;
+    }
+
+    .footer__subinfo_information{
+        flex-direction: column;
+    }
+
+    .footer__subinfo_information a{
+        text-align: center;
+    }
+
+    .btn--mobile{
+        width: 100%;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .btn--mobile{
+        background-image: linear-gradient(to right, #FF8103 0%, #FFAE00  100%)
+    }
+
+    .fixeboxes{
+        padding: 70px 7.5% 55px 7.5%;
+    }
+
+    .fiveboxes__box{
+        width: 100%;
+        margin-bottom: 13px;
+    }
+
+    .fiveboxes__box_internals__rightside{
+        display: flex;
+        flex-direction: row;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        box-sizing: border-box;
+    }
+
+    .fiveboxes__box_internals img{
+        width: 12px;
+        height: 56px;
+    }
+
+    .fixeboxes h2{
+        margin: 0 0 36px;
+    }
+
+    .fiveboxes__box_internals .fiveboxes__box_internals__rightside img{
+        width: 40px;
+        margin: -12px -5px -12px -12px;
+    }
+
+    .phoneright_textleft_area{
+        padding: 35px 0 65px;
+    }
+
+    .fiveboxes__box h3{
+        font-size: 18px;
+        padding-left: 14px;
+        padding-top: 7px;
+        margin: 0;
+    }
+
+    .fixeboxes .my_container{
+        width: 100%;
+    }
+
+    .fiveboxes_leftside{
+        width: 12px;
+    }
+
+    .multibox_carousel_section{
+        padding-top: 0px;
+    }
+
+    .textleft,
+    .textright{
+        padding: 0;
+    }
+
+    .textright h3{
+        margin-top: 0;
+    }
+
+    .carousel_section h2{
+        padding-top: 60px;
+    }
+
+    .blogs_section{
+        padding-top: 55px;
+        padding-bottom: 59px;
+    }
+
+    .blogs_section h2{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 38px;
+    }
+
+    .blogs_section__squares{
+        height: auto;
+    }
+
+    .picright_textleft{
+        padding-top: 59px;
+    }
+
+    .multibox_carousel_section{
+        padding-bottom: 36px;
+    }
+
+    .blogs_squares__left,
+    .blogs_squares__right__top,
+    .blogs_minibox__left,
+    .blogs_minibox__right{
+        background-image: linear-gradient(to right, #FF8103 0%, #FFAE00  100%)
+    }
+
+    .blogs_minibox__left,
+    .blogs_minibox__right{
+        width: 48%;
+    }
+
+    .blogs_section h4{
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    .blogs_squares__left,
+    .blogs_squares__right__top{
+        margin-bottom: 12px;
+    }
+
+    .blogs_squares__right__bottom{
+        justify-content: space-between;
+    }
+
+    .home_hero .btn--left{
+        padding: 8px 10.1%;
+    }
+
+    .home_hero .btn--right{
+        padding: 8px 4.2%;
+    }
+
+    .footer__content{
+        padding-top: 25px;
+    }
+
+    .footer__intro{
+        padding-bottom: 0;
+    }
+
+    .footer__subinfo_information a{
+        font-size: 15px;
+    }
+    
+    .footer__maininfo_singular h4{
+        font-size: 16px;
+    }
+
+    .footer__maininfo_singular p{
+        font-size: 15px;
+    }
+
+    .footer__maininfo_singular--second{
+        padding-left: 30px;
+    }
+    
+    .footer__maininfo_singular--third{
+        display: none;
+    }
+
+    .phoneright_textleft{
+        flex-direction: column;
+    }
+
+    .phoneright_textleft_area .phoneright_textleft__left,
+    .phoneright_textleft_area .phoneright_textleft__right{
+        width: 100%;
+    }
+
+    .picright button{
+        margin-bottom: 56px;
+    }
+    
+    .multibox_item__imagepara img{
+        margin-top: -5px;
+    }
+
+    .multibox_item__imagepara p{
+        padding-left: 14px;
+    }
+
+    .carousel_3_item .job_blurb{
+        padding-right: 0;
+    }
+
+    .multibox_carousel_section h2{
+        padding-top: 65px;
+    }
+
+    .carousel_section h2{
+        margin-bottom: 20px;
+    }
+
+    .carousel__picright h3{
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+
+    .carousel__picright h4{
+        font-weight: 18px;
+    }
+
+    .footer__intro{
+        padding-top: 0;   
+    }
+
+    .footer__maininfo_tri{
+        margin-bottom: 24px;
+    }
+
+    .orange_bar{
+        margin-top: 30px;
+    }
+
+    .footer__maininfo{
+        padding-top: 35px;
+    }
+
+    .carousel_2_item{
+        flex-direction: column;
+    }
+
+    .carousel_2__left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel_2__left img{
+        width: 70px;
+    }
+
+    .carousel_2__right{
+        margin: 0 auto;
+    }
+
+    .carousel_2--title{
+        text-align: center;
+    }
+
+    .carousel_2_item{
+        padding: 20px;
+    }
+
+    .carousel_2__section h2{
+        margin-bottom: 38px;
+    }
+
+    .carousel_2__section{
+        padding-top: 35px;
+        padding-bottom: 60px;
+    }
+
+    .picleft_textright{
+        padding-bottom: 60px;
+    }
+
+    .home_hero{
+        padding: 211px 0 94px;
+    }
+
+    .home_hero p{
+        padding-bottom: 45px;
+    }
+
+    .home_hero h1{
+        margin-bottom: 54px;
+    }
+
+    .home_hero__buttons__mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home_hero__buttons__mobile__button{
+        width: 48%;
+        background-image: linear-gradient(to right, #FF8103 0%, #FFAE00 100%);
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .phoneright_textleft__right{
+        margin-top: 15px;
+    }
+
+    .carousel_section{
+        padding-bottom: 25px;
+    }
+
+    .home_hero__imagediv{
+        width: 100%;
+    }
+
+    .about_fourboxes p{
+        font-size: 16px;
+    }
+
+    .about_fourboxes{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .about_fourboxes__left, 
+    .about_fourboxes__right{
+        margin-bottom: 2%;
+        padding-left: 26px;
+        width: 100%;
+
+    }
+
+    .about_fourboxes__left{
+        margin-bottom: 20px;
+    }
+
+    .about_box__imageleft{
+        width: 12px;
+    }
+
+    .about_fourboxes_section{
+        padding: 60px 0 50px;
+    }
+
+    .contact_formarea__content{
+        flex-direction: column;
+    }
+
+    .contact_formarea__content__left{
+        width: 100%;
+    }
+
+    .contact_formarea__content__right{
+        width: 100%;
+        margin-top: 30px;
+        height: 300px;
+    }
+
+    .contact_formarea{
+        padding: 60px 0;
+    }
+
+    .contact_formarea__header p{
+        padding-bottom: 20px;
+    }
+
+    .contact_form__input{
+        font-size: 15px;
+        margin-bottom: 8px;
+        padding: 16px 10px 16px 10px;
+    }
+
+    .tribox{
+        flex-direction: column;
+    }
+
+    .tribox__single_a{
+        width: 100%;
+    }
+
+    .tribox__single__content{
+        padding: 20px 0;
+    }
+
+    .contact_details{
+        padding: 35px 20px 35px;
+    }
+
+    .tribox__single__content h3{
+        margin-top: 13px;
+    }
+
+    .headernav__logo img{
+        width: 60%;
+    }
+
+    .modal-content{
+        width: 80%;
+    }
+
+    .modal-content h2{
+        font-size: 26px;
+    }
+
+    .modal_form_input{
+        padding: 16px 15px;
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .modal_form_input--submit{
+        width: 99%;
+    }
+
+    .blogs_category_row{
+        flex-direction: column;
+    }
+
+    .blogs_category{
+        padding: 70px 0;
+    }
+
+    .blog_grid__item__button{
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .blogs_grid__item h3{
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+
+    .blogs_catsidebar{
+        width: 100%;
+    }
+
+    .blogs_grid{
+        width: 102.7%;
+    }
+
+    .blog_sideinfo p{
+        padding-bottom: 15px;
+    }
+
+    .blog_sideinfo{
+        padding: 28px 28px 45px 28px;
+    }
+
+    .nav_logo{
+        &_mobile{
+            width: 42%;
+        }
+    }
+
+    .phoneright_textleft__left h2{
+        font-size: 21px;
+    }
+
+    .footer__circle{
+        width: 38px;
+        padding-left: 8px;
+        padding-right: 0;
+    }
+
+    .phoneright_textleft__left h2,
+    .phoneright_textleft__left p{
+        text-align: center;
+    }
+
+    .phoneright_textleft_area .phoneright_textleft__left{
+        padding-right: 0;
+    }
+
+    .modal-content{
+        margin: 32% auto;
+    }
+
+    .modal-content .close img{
+        width: 20px;
+    }
+
+    .multibox_carousel .owl-stage-outer{
+        padding-bottom: 20px;
+    }
+    
+    .picleft_textright p, 
+    .picright_textleft p{
+        padding-bottom: 10px;
+    }
+
+    .picright_textleft{
+        padding-bottom: 0;
+    }
+    
+    .clients_component--web p{
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .carousel_section_area .btn--mobile{
+        margin-bottom: 35px;
+    }
+
+    .multibox_carousel__area{
+        background-color: #F2F2F2;
+    }
+
+    .job_blurb{
+        min-height: 70px;
+    }
+    
+    .carousel_section_area .carousel__picright{
+        padding-top: 0;
+    }
+
+    .locationpara{
+        margin-top: -15px;
+    }
+    
+}
+
+@media(max-width: 500px){
+    .job_blurb{
+        min-height: 108px;
+    }
+}
+

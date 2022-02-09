@@ -1,0 +1,48 @@
+<div class="multibox_carousel__area">
+    <div class="multibox_carousel_section my_container">
+        <h2>Featured Jobs</h2>
+        <div class="multibox_carousel owl-carousel owl-theme">
+        {% for job in jobs %}
+            <a href="{{ job.link }}">
+                <div class="job-{{ job.sector_theme}} item carousel_3_item">
+                    {% if (job.sector_theme == 'mec') %}
+                        <img class="multibox_item__toprightimage" src="{{ site.theme.link }}/assets/img/MechanicalElectricalSquareIcon.svg" alt="">
+                    {% elseif (job.sector_theme == 'buil') %}
+                        <img class="multibox_item__toprightimage" src="{{ site.theme.link }}/assets/img/ConstructionSquareIcon.svg" alt="">
+                    {% elseif (job.sector_theme == 'fire') %}
+                        <img class="multibox_item__toprightimage" src="{{ site.theme.link }}/assets/img/FireSecuritySquareIcon.svg" alt="">
+                    {% elseif (job.sector_theme == 'man') %}
+                        <img class="multibox_item__toprightimage" src="{{ site.theme.link }}/assets/img/ManufacturingTechnologySquareIcon.svg" alt="">
+                    {% elseif (job.sector_theme == 'it') %}
+                        <img class="multibox_item__toprightimage" src="{{ site.theme.link }}/assets/img/ItSoftwareSquareIcon.svg" alt="">
+                    {% endif %}
+                    <h4>{{ job.job_title }}</h4>
+                    <p class="job_blurb">{{ job.description }}</p>
+                    <div class="multibox_item__imagepara locationpara">
+                        <img src="{{ site.theme.link }}/assets/img/SmallLocationIcon-01.svg" alt="">
+                        <p>{{ job.location }}</p>
+                    </div>
+                    <div class="multibox_item__imagepara salarypara">
+                        <img src="{{ site.theme.link }}/assets/img/SmallPermanentIcon-01.svg" alt="">
+                        <p>{{ job.salary }}</p>
+                    </div>
+                    <div class="multibox_item__imagepara">
+                        {% if (job.sector_theme == 'mec') %}
+                            <img src="{{ site.theme.link }}/assets/img/SmallMechanicalElectrical-01.svg" alt="">
+                        {% elseif (job.sector_theme == 'buil') %}
+                            <img src="{{ site.theme.link }}/assets/img/SmallContructionIcon-01.svg" alt="">
+                        {% elseif (job.sector_theme == 'fire') %}
+                            <img src="{{ site.theme.link }}/assets/img/SmallFireSecurityIcon-01.svg" alt="">
+                        {% elseif (job.sector_theme == 'man') %}
+                            <img src="{{ site.theme.link }}/assets/img/SmallManufactoringTechIcon-01.svg" alt="">
+                        {% elseif (job.sector_theme == 'it') %}
+                            <img src="{{ site.theme.link }}/assets/img/SmallITSoftware-01.svg" alt="">
+                        {% endif %}
+                        <p>{{ job.sector }}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+</div>

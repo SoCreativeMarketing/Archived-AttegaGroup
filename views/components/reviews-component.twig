@@ -1,0 +1,24 @@
+<div class="carousel_2__section">
+    <div class="carousel_section_2 my_container">
+    <h2>Applicants we have helped</h2>
+        <div class="carousel_2 owl-carousel owl-theme">
+        {% for applicant in applicants %}
+            <div class="item carousel_2_item">
+                <!-- <div class="carousel_2__left">
+                    <img     alt="">
+                </div> -->
+                <div class="carousel_2__right">
+                    <p class="carousel_2--paratext">{{ applicant.review }}</p>
+                    <p class="carousel_2--title">{{ applicant.full_name }}</p>
+                </div>
+            </div>
+        {% endfor %}  
+        </div>
+    <div class="attega_center">
+        <a class="btn btn--small btn--web" href="https://bit.ly/3nVgpaK">All Reviews</a>
+    </div>
+    <a class="reviews_button_class" href="https://bit.ly/3nVgpaK">
+        <button class="btn btn--mobile">All Reviews</button>
+    </a>
+    </div>
+</div>

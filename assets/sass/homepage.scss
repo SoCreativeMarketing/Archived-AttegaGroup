@@ -1,0 +1,289 @@
+.home_hero h1{
+    margin-bottom: 46px;
+}
+
+.home_hero .btn--left{
+    padding: 14px 88px;
+    margin-right: 12px;
+}
+
+.home_hero .btn--right{
+    padding: 14px 68px;
+}
+
+.home_hero{
+    height: 937px;
+    padding: 219.4px 0 191px;
+    background-color: black;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.home_hero p{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 30px;
+    padding-right: 26%;
+
+    @media(max-width: 767px){
+        padding-right: 0;
+    }
+}
+
+.home_hero__buttons{
+    display: flex;
+}
+
+.fixeboxes{
+    padding: 65px 110px 110px 110px;
+    background-size: 100%;
+}
+
+.fixeboxes h2.fiveboxes_htwoselector{
+    text-align: center;
+    color: white;
+
+    @media(max-width: 767px){
+        padding-bottom: 0;
+    }
+}
+
+.fiveboxes__boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fiveboxes__box{
+    width: 24%;
+    background-color: #1E1E1E;
+}
+
+.fixeboxes h3{
+    color: white;
+    margin-top: 34px;
+}
+
+.fiveboxes__box_internals{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.fiveboxes_leftside{
+    position: absolute;
+    left: 0;
+    right: calc(100% - 21px);
+    height: 100%;
+    z-index: 5;
+    transition: right 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.textleft,
+.textright{
+    margin: auto 0;
+}
+
+.fiveboxes_mechanical{
+    background-image: linear-gradient(#06C170 0%, #178E56 100%);
+}
+
+.fiveboxes_construction{
+    background-image: linear-gradient(#EFAE2C 0%, #FE8700 100%);
+}
+
+.fiveboxes_fireandsecurity{
+    background-image: linear-gradient(#EA4E2F 0%, #FE3B3B 100%);
+}
+
+.fiveboxes_manufacturing{
+    background-image: linear-gradient(#32A9FC 0%, #0162F7 100%);
+}
+
+.fiveboxes_itsoftware{
+    background-image: linear-gradient(#6500CC 0%, #8D23B9 100%);
+}
+
+.fiveboxes__box_internals__rightside{
+    padding-left: 38px;
+    z-index: 10;
+    position: relative;
+    padding-top: 18px;
+}
+
+.fiveboxes__box_internals__rightside--fire h3{
+    padding-right: 84px;
+}
+
+.fiveboxes__box_internals__rightside img{
+    height: 101px;
+    margin-left: -12px;
+}
+
+.picright_textleft{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: flex;
+}
+
+@media(min-width: 768px){
+    .picright_textleft.sector_picright{
+        padding-bottom: 20px;
+    }  
+}
+
+
+.picleft_textright{
+    display: flex;
+}
+
+.textleft{
+    padding-right: 105px;
+    width: 50%;
+}
+
+.textright{
+    width: 50%;
+}
+
+.picright{
+    width: 50%;
+}
+
+.picleft{
+    width: 50%;
+}
+
+.picright img,
+.picleft img{
+    width: 100%;
+}
+
+.picright img,
+.picleft img,
+.btn,
+.carousel__picright img,
+.fiveboxes__box,
+.carousel_2_item{
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+
+.textright{
+    padding-left: 105px;
+}
+
+.textright h3,
+.textleft h3{
+    margin-top: 0;
+}
+
+.picleft_textright p,
+.picright_textleft p{
+    padding-bottom: 44px;
+}
+
+.blogs_section{
+    padding-top: 111px;
+    padding-bottom: 109px;
+    background-color: grey;
+}
+
+.blogs_section h2{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+}
+
+.blogs_section__squares{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogs_squares_left{
+    width: 49%
+}
+
+.blogs_squares__right{
+    width: 49%;
+}
+
+.nav_inner__content a:hover{
+    color: #FFAE00;
+}
+
+.triangular_div{
+    background-color: #121212;
+    box-shadow: 30px 0 56px rgb(0 0 0 / 85%);
+    box-shadow: 24px;
+    width: 101%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%) skew(17deg);
+    z-index: 5;
+}
+
+.home_hero__image{
+    object-fit: cover;
+}
+
+#homeHeroImg{
+    // transform: translateZ(0);
+    z-index: 1;
+    will-change: opacity; 
+}
+
+.home_hero__imagediv{
+    width: 60%;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,0.09744779582366592) 78%, rgba(0,0,0,0.10968137254901966) 100%);
+    }
+}
+
+.home_hero__imagediv .home_hero__image{
+    width: 100%;
+    height: 100%;
+}
+
+.home_hero .my_container{
+    position: relative;
+    z-index: 20;
+}
+
+.btn.btn--left:hover,
+.btn.btn--right:hover{
+    background-image: linear-gradient(#FFAE00 100%, #FF8103 0%);
+    text-decoration: underline;
+}
+
+.background_colouring{
+    background-color: #F2F2F2;
+}
+
+.text_right__specificone{
+    padding-right: 20%;
+}
+
+.fiveboxes_itsoftwaresection h3{
+    padding-right: 35px;
+}
+
+.home .multibox_carousel_section h2{
+    @media(max-width: 767px){
+        padding-top: 0;
+    }
+}

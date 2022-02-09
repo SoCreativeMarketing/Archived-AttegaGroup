@@ -1,0 +1,99 @@
+{% extends "base.twig" %}
+
+{% block body_end %}
+    <script src="{{ site.theme.link }}/assets/js/homepage.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="home">
+    <div class="home_hero">
+        <div class="triangular_div"></div>
+        <div class="home_hero__imagediv">
+            <img class="home_hero__image" id="homeHeroImg" alt="">
+        </div>
+        <div class="my_container">
+            <h1>YOUR NEW<br>RECRUITMENT PARTNER</h1>
+            <p>Whether you're searching for exceptional talent to join your team, or you're a candidate looking for your next role, the team at Attega are experts in 
+            recruitment and are dedicated to helping you succeed.</p>
+            <div class="home_hero__buttons web_info">
+                <a class="" href="/clients">
+                    <button class="btn btn--left">
+                        Hiring
+                    </button>
+                </a>
+                <a class="" href="/applicants">
+                    <button class="btn btn--right">
+                        Applying
+                    </button>
+                </a>
+            </div>
+            <div class="home_hero__buttons__mobile mobile_info">
+            <a class="home_hero__buttons__mobile__button" href="/clients">Hiring</a>
+            <a class="home_hero__buttons__mobile__button" href="/applicants">Applying</a>
+            </div>
+        </div>
+    </div>
+    {% include 'components/sectors-component.twig' %}
+    <div class="background_colouring">
+        <div class="picright_textleft my_container">
+            <div class="web_info textleft">
+                <h3>Looking for the perfect recruit to fill your job role?</h3>
+                <p>As one of the leading recruitment firms on the south coast, our team have many years of experience providing hiring solutions and more importantly, 
+                finding ideal candidates who fit in perfectly with different teams and cultures. We're passionate about strengthening companies workforces and seeing 
+                you succeed. We have experts in a number of industries and can assist with a variety of roles.</p>
+                <a class="btn btn--small btn--web" href="/clients">Fill your role</a>
+            </div>
+            <div class="web_info picright">
+                <img src="{{ site.theme.link }}/assets/img/HomepageImage1.jpg" alt="">
+            </div>
+            <div class="mobile_info textleft">
+                <h3>Looking for the perfect recruit to fill your job role?</h3>
+                <img src="{{ site.theme.link }}/assets/img/HomepageImage1.jpg" alt="">
+            </div>
+            <div class="mobile_info picright">
+                <p>As one of the leading recruitment firms on the south coast, our team have many years of experience providing hiring solutions and more importantly, 
+                finding ideal candidates who fit in perfectly with different teams and cultures. We're passionate about strengthening companies workforces and seeing 
+                you succeed. We have experts in a number of industries and can assist with a variety of roles.</p>
+                <a href="/clients">
+                    <button class="btn btn--mobile">Fill your role</button>
+                </a>
+            </div>
+        </div>
+        <div class="picleft_textright my_container">
+            <div class="web_info picleft">
+                <img src="{{ site.theme.link }}/assets/img/HomepageImage2.jpg" alt="">
+            </div>
+            <div class="web_info textright">
+                <h3 class="text_right__specificone">Aim higher and take the next step in your career</h3>
+                <p>Searching for a new job can be stressful and time consuming, but with the help of our recruitment specialists, you will find our process simple but 
+                effective to get you noticed by employers. We believe in being honest and transparent with our candidates during the recruitment process, which leads 
+                to a successful collaboration and, ultimately, your new career.</p>
+                <a class="btn btn--small btn--web" href="/applicants">Search Vacancies</a>
+            </div>
+            <div class="mobile_info picleft">
+                <p>Searching for a new job can be stressful and time consuming, but with the help of our recruitment specialists, you will find our process simple but 
+                effective to get you noticed by employers. We believe in being honest and transparent with our candidates during the recruitment process, which leads 
+                to a successful collaboration and, ultimately, your new career.</p>
+                <a href="/applicants">    
+                    <button class="btn btn--mobile">Search Vacancies</button>
+                </a>
+            </div>
+            <div class="mobile_info textright">
+                <h3 class="text_right__specificone">Aim higher and take the next step in your career</h3>
+                <img src="{{ site.theme.link }}/assets/img/HomepageImage2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    {% include 'components/featured-jobs-component.twig' with { jobs : job_listings } %}
+
+    {% include 'components/blogs-component.twig' with { blogs : blogs_featured } %}
+
+    {% include 'components/clients-component.twig' %}
+
+    {% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+</div>
+
+
+{% endblock %}

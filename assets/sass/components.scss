@@ -1,0 +1,25 @@
+// sectors component
+
+.fiveboxes__box:hover{
+    .fiveboxes_leftside{
+        right: 0;
+    }
+
+    .fiveboxes__box_internals__rightside h3{
+        text-decoration: underline;
+    }
+}
+
+// OSCP
+
+.oscp{
+    padding: 110px 0;
+
+    @media(max-width: 1500px){
+        padding: 85px 0;
+    }
+
+    @media(max-width: 767px){
+        padding: 70px 0;
+    }
+}

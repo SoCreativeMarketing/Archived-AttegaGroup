@@ -1,0 +1,40 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero technology_hero">
+    <h1>MANUFACTURING &amp; TECHNOLOGY</h1>
+    <div class="technology_bar"></div>
+</div>
+{% include 'components/sectors-component.twig' %}
+<div class="sector_background">
+    <div class="picright_textleft my_container sector_picright">
+        <div class="textleft">
+            <h3>Recruitment in the Manufacturing and Technology sector</h3>
+            <p>Our specialist recruitment team have years of experience providing hiring solutions across a broad range of roles within the Manufacturing and Technology sector.<br><br>
+            We recruit for a number of roles at all levels, including Production Managers, Mechanical Designers, Project Managers, Administrative roles and much more.<br><br>
+            To discuss a role we have available or a role you would like to hire for, get in touch with the Attega team today.</p>
+            <a class="btn btn--small btn--web" onclick="openModal()">Start Hiring</a>
+        </div>
+        <div class="picright">
+            <img src="{{ site.theme.link }}/assets/img/ManufactureTechnologyImage.jpg" alt="">
+            <a href="tel:02393876445">
+                <button class="btn btn--mobile">Start Hiring</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% include 'components/oscp-component.twig' %}
+
+{% include 'components/blogs-component.twig' with { blogs : blogs_featured } %}
+
+{% include 'components/clients-component.twig' %}
+
+{% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

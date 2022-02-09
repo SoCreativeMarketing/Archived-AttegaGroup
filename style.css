@@ -1,0 +1,93 @@
+/*
+Theme Name:     Lumberjack Starter Theme
+Description:    A supercharged starter theme for WordPress
+Version:        2.0.0
+Author:         Rareloop
+Author URI:     http://rareloop.com
+*/
+
+/* background images not working in SASS */
+
+.fixeboxes{
+    background: url('assets/img/Grey-Under-Hero-1920x395.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.blogs_section{
+    background: url('assets/img/grey1920x824.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.sectors_hero{
+    background: url("assets/img/Sectors-Hero-Image.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.firesecurity_hero{
+    background: url("assets/img/SectorFireHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.construction_hero{
+    background: url("assets/img/SectorConstructionHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.mechanical_hero{
+    background: url("assets/img/SectorElectricHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.software_hero{
+    background: url("assets/img/SectorSoftwareHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.technology_hero{
+    background: url("assets/img/SectorTechHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.about_us_hero{
+    background: url("assets/img/AboutUsHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.applicants_hero{
+    background: url("assets/img/ApplicantsHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.clients_hero{
+    background: url("assets/img/ClientsHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.carousel_section_area{
+    background: url("assets/img/ClientTestimonialBackground.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.contact_hero{
+    background: url("assets/img/ContactHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.carousel_2__section{
+    background: url("assets/img/GoogleReviewGreyBackground.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.blogs_hero{
+    background: url("assets/img/BlogHeroImage.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.blog_search.web_info input[type="submit"]{
+    background: url('assets/img/ArrowRight.svg') no-repeat center; 
+}
+
+.mobile_info .blog_search input[type="submit"]{
+    background: url('assets/img/ArrowRight.svg') no-repeat center; 
+}

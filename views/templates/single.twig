@@ -1,0 +1,22 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero blogs_hero">
+    <div class="my_container">
+        <h1 class="headline">{{post.title}}</h1>
+    </div>
+</div>
+<div class="blog_content">
+    <div class="my_container">
+        <div class="body">
+            {{post.content}}
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

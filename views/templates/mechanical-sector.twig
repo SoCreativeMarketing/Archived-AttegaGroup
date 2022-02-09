@@ -1,0 +1,40 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero mechanical_hero">
+    <h1>MECHANICAL &amp; ELECTRICAL</h1>
+    <div class="mechanical_bar"></div>
+</div>
+{% include 'components/sectors-component.twig' %}
+<div class="sector_background">
+    <div class="picright_textleft my_container sector_picright">
+        <div class="textleft">
+            <h3>We partner with established businesses within the Mechanical &amp; Electrical sector</h3>
+            <p>Our Mechanical and Electrical recruitment consultants are experts in the industry, with experience working on a number of roles across the UK from Electronics 
+            Design Engineers to Mechanical Fitters, and everything in between. Attega specialise in hiring at all career levels consisting of designing and developing equipment, 
+            assembly of mechanical parts, project management and much more. View our vacancies below or get in touch to discuss your role.</p>
+            <a class="btn btn--small btn--web" onclick="openModal()">Start Hiring</a>
+        </div>
+        <div class="picright">
+            <img src="{{ site.theme.link }}/assets/img/mechanicalelectrical.jpg" alt="">
+            <a href="tel:02393876445">
+                <button class="btn btn--mobile">Start Hiring</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% include 'components/oscp-component.twig' %}
+
+{% include 'components/blogs-component.twig' with { blogs : blogs_featured } %}
+
+{% include 'components/clients-component.twig' %}
+
+{% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

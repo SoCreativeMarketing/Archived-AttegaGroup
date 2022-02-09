@@ -1,0 +1,55 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero clients_hero">
+    <h1>CLIENTS</h1>
+</div>
+<div class="phoneright_textleft_area">
+    <div class="phoneright_textleft my_container">
+        <div class="phoneright_textleft__left">
+            <h2>Call to discuss our Client Services</h2>
+            <p>At Attega, our client services are tailored to suit your recruitment needs. With our high level of expertise and in-depth knowledge of the market, 
+            we provide packages that align with the primary goal of strengthening your workforce.</p>
+        </div>
+        <div class="phoneright_textleft__right">
+            <a href="tel:02393 876 445">
+                <div class="tribox__single_phoneright">
+                    <div class="tribox__single__imageleft"></div>
+                    <div class="tribox__single__content">
+                        <img class="tribox__single__icon" src="{{ site.theme.link }}/assets/img/PhoneIcon-01.svg" alt="">
+                        <h3>Call us:</h3>
+                        <p>02393 876 445</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="picright_textleft my_container clients__phoneright">
+    <div class="textleft">
+        <h3>Solution-based recruitment focused on your needs</h3>
+        <p>The process of most recruitment firms is to send their clients CVs by email, requiring the employer to sift through each one before deciding who to select 
+        for an interview. We feel this approach is a little outdated and time consuming for hiring managers' busy schedules. At Attega, we offer client recruitment 
+        packages to suit your business' needs which will save you time and allow us to handle the whole recruitment process for you - the way it should be! Your 
+        dedicated recruitment consultant will compose your recruitment strategy (Retainer & Managed packages) or begin sifting candidates for you that they believe 
+        are suitable for your vacancy.</p>
+        <a class="btn btn--small btn--web" onclick="openModal()">Discuss your Requirements</a>
+    </div>
+    <div class="picright">
+        <img src="{{ site.theme.link }}/assets/img/ClientImage.jpg" alt="">
+        <a href="tel:02393 876 445">
+            <button class="btn btn--mobile">Discuss your Requirements</button>
+        </a>
+    </div>
+</div>
+
+{% include 'components/clients2-component.twig' %}
+
+{% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

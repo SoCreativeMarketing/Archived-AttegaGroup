@@ -1,0 +1,41 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero construction_hero">
+    <h1>CONSTRUCTION</h1>
+    <div class="construction_bar"></div>
+</div>
+{% include 'components/sectors-component.twig' %}
+<div class="sector_background">
+    <div class="picright_textleft my_container sector_picright">
+        <div class="textleft">
+            <h3>Recruitment for Construction Industry</h3>
+            <p>Attega’s consultants have a high level of expertise and in-depth knowledge of the market when it comes to construction recruitment. Our strong client relations 
+            and wide candidate hub has enabled us to connect businesses to exceptional talent in the building sector over the years across the entire UK.<br><br>
+            We are continually strengthening companies’ workforces in a variety of construction roles at various levels, including Project and Site Managers Quantity 
+            Surveyors, Construction Management, and more.</p>
+            <a class="btn btn--small btn--web" onclick="openModal()">Start Hiring</a>
+        </div>
+        <div class="picright">
+            <img src="{{ site.theme.link }}/assets/img/ConstructionImage.jpg" alt="">
+            <a href="tel:02393876445">
+                <button class="btn btn--mobile">Start Hiring</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% include 'components/oscp-component.twig' %}
+
+{% include 'components/blogs-component.twig' with { blogs : blogs_featured } %}
+
+{% include 'components/clients-component.twig' %}
+
+{% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}

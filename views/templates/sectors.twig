@@ -1,0 +1,46 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div class="medium_hero sectors_hero">
+    <h1>SECTORS</h1>
+</div>
+{% include 'components/sectors-component.twig' %}
+<div class="sector_background">
+    <div class="picright_textleft my_container">
+        <div class="web_info textleft">
+            <h3>An experienced team across a number of industries</h3>
+            <p>Attega Group recruits predominantly within the Engineering industry, specialising in a number of key sectors. By focusing on key areas, we can guarantee 
+            that our team has a strong understanding of the industry requirements, as well as having an extensive range of relevant contacts. By choosing to work with 
+            Attega, you’ll be working with an experienced, dedicated and industry conscious team.</p>
+            <a class="btn btn--small btn--web" href="">Book a Client Briefing Call</a>
+        </div>
+        <div class="web_info picright">
+            <img src="{{ site.theme.link }}/assets/img/SectorImage.jpg" alt="">
+        </div>
+        <div class="mobile_info textleft">
+            <h3>An experienced team across a number of industries</h3>
+            <img src="{{ site.theme.link }}/assets/img/SectorImage.jpg" alt="">
+        </div>
+        <div class="mobile_info picright">
+            <p>Attega Group recruits predominantly within the Engineering industry, specialising in a number of key sectors. By focusing on key areas, we can guarantee that 
+            our team has a strong understanding of the industry requirements, as well as having an extensive range of relevant contacts. By choosing to work with Attega, 
+            you’ll be working with an experienced, dedicated and industry conscious team.</p>
+            <a href="">
+                <button class="btn btn--mobile">Book a Client Briefing Call</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% include 'components/blogs-component.twig' with { blogs : blogs_featured } %}
+
+{% include 'components/clients-component.twig' %}
+
+{% include 'components/reviews-component.twig'  with { applicants : applicants_reviews } %}
+
+{% endblock %}
+
+{% block body_end %}
+
+{% endblock %}
